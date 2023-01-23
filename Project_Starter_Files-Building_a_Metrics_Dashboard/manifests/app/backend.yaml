@@ -2,6 +2,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: backend-app
+  annotations:
+    "sidecar.jaegertracing.io/inject": "true"
+  namespace: observability
 spec:
   replicas: 3
   selector:
@@ -11,11 +14,13 @@ spec:
     metadata:
       labels:
         app: backend
+      namespace: observability
     spec:
       containers:
       - name: backend
         # We advise you to build, push and use your own image, instead of using instructor's image.      
-        image: ghcr.io/jasonsmithio/backend:v1
+        image: tpso/metrics-backend
+        imagePullPolicy: Always
         ports:
         - containerPort: 8081
 ---
@@ -23,6 +28,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: backend-service
+  namespace: observability
 spec:
   selector:
     app: backend
