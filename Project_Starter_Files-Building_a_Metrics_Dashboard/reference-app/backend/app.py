@@ -12,7 +12,7 @@ from flask_opentracing import FlaskTracing
 app = Flask(__name__)
 
 metrics = PrometheusMetrics(app)
-metrics.info('backend_app', 'Backend app', version="1.0.0")
+metrics.info('backend_app', 'Backend app', version="1.0.3")
 
 app.config["MONGO_DBNAME"] = "example-mongodb"
 app.config[
