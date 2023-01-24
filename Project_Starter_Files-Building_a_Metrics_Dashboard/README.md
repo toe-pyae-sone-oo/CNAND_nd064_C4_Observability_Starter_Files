@@ -97,3 +97,14 @@ Description:
 
 ## Final Dashboard
 *TODO*: Create a Dashboard containing graphs that capture all the metrics of your KPIs and adequately representing your SLIs and SLOs. Include a screenshot of the dashboard here, and write a text description of what graphs are represented in the dashboard.  
+
+![FinalDashboard1](./answer-img/final_dashboard_1.png)
+![FinalDashboard2](./answer-img/final_dashboard_2.png)
+
+1. Uptime: Services uptime for backend and frontend
+2. Service Response Errors: The rate of response error counts in 5m.
+3. Error rate: The count of response errors divided by the total number of responses.
+4. Latency: The time the service takes to process a request.
+5. RPS (Request per second): The total number of requests of each service.
+6. CPU Usage: The CPU usage of each service.
+7. Memory Usage: The memory usage of each service.
