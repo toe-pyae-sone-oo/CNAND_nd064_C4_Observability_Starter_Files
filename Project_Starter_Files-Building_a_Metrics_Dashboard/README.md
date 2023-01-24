@@ -4,17 +4,17 @@
 
 *TODO:* run `kubectl` command to show the running pods and services for all components. Take a screenshot of the output and include it here to verify the installation
 
-![PodsAndServices](/answer-img/pods_and_services.png)
+![PodsAndServices](./answer-img/pods_and_services.png)
 
 ## Setup the Jaeger and Prometheus source
 *TODO:* Expose Grafana to the internet and then setup Prometheus as a data source. Provide a screenshot of the home page after logging into Grafana.
 
-![GrafanaHomePage](/answer-img/grafana_home.png)
+![GrafanaHomePage](./answer-img/grafana_home.png)
 
 ## Create a Basic Dashboard
 *TODO:* Create a dashboard in Grafana that shows Prometheus as a source. Take a screenshot and include it here.
 
-![GrafanaNewDashboard](/answer-img/grafana_new_dashboard.png)
+![GrafanaNewDashboard](./answer-img/grafana_new_dashboard.png)
 
 ## Describe SLO/SLI
 *TODO:* Describe, in your own words, what the SLIs are, based on an SLO of *monthly uptime* and *request response time*.
@@ -38,13 +38,13 @@
 ## Tracing our Flask App
 *TODO:*  We will create a Jaeger span to measure the processes on the backend. Once you fill in the span, provide a screenshot of it here. Also provide a (screenshot) sample Python file containing a trace and span code used to perform Jaeger traces on the backend service.
 
-![JaegerUI](/answer-img/jaeger_ui.png)
-![BackendCode](/answer-img/backend_code.png)
+![JaegerUI](./answer-img/jaeger_ui.png)
+![BackendCode](./answer-img/backend_code.png)
 
 ## Jaeger in Dashboards
 *TODO:* Now that the trace is running, let's add the metric to our current Grafana dashboard. Once this is completed, provide a screenshot of it here.
 
-![GrafanaJaegar](/answer-img/grafana_jaeger.png)
+![GrafanaJaegar](./answer-img/grafana_jaeger.png)
 
 ## Report Error
 *TODO:* Using the template below, write a trouble ticket for the developers, to explain the errors that you are seeing (400, 500, latency) and to let them know the file that is causing the issue also include a screenshot of the tracer span to demonstrate how we can user a tracer to locate errors easily.
@@ -66,7 +66,7 @@ Severity: `High`
 Description: 
 - The service cannot connect to the Mongo database.
 - Trace URL: http://localhost:8088/trace/3a929248a336443d?uiFind=e00a401f541fbabd
-![JaegerSpan](/answer-img/jaeger_span.png)
+![JaegerSpan](./answer-img/jaeger_span.png)
 
 
 ## Creating SLIs and SLOs
